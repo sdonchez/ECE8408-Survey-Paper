@@ -1,0 +1,36 @@
+\documentclass[journal]{LaTeX_Assets/IEEETransactions_LaTeX/IEEEtran/IEEEtran}
+%\documentclass[journal]{IEEEtran} %TODO: Resolve mapping issues
+\usepackage{graphicx}
+\graphicspath{{./jpeg/}{LaTeX_Assets/jpeg/}}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{float}
+\usepackage{upgreek}
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+
+\begin{document}
+
+    \title{Survey Paper}
+    \author{Stephen~Donchez,~\IEEEmembership{Member,~IEEE}%
+    \thanks{S. Donchez is with Villanova University, Villanova, PA 19085 USA 
+    \mbox{e-mail:sdonchez@villanova.edu}}%
+    \thanks{Manuscript received Month XX, 2022}}%
+
+    \maketitle
+
+
+    \section{Introduction}
+    \section{}
+
+
+    \bibliographystyle{LaTeX_Assets/IEEETransactions_LaTeX/Transactions-Bibliography/IEEEtran}
+ %   \bibliographystyle{IEEEtran} %TODO: Resolve mapping issues
+    \bibliography{LaTeX_Assets/SDonchezResearch}
+
+    %shrink space between bibliography and biography
+    \vskip 0pt plus -1fil
+
+    \input{LaTeX_Assets/Biography.tex}
+
+\end{document}
