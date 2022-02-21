@@ -292,3 +292,4 @@ TSWLatexianTemp*
 #ignore documentation assets
 ./*/doc/html/
 ./*/doc/latex/
+*.pdf
