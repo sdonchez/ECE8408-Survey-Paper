@@ -1,32 +1,37 @@
-\documentclass[journal]{LaTeX_Assets/IEEETransactions_LaTeX/IEEEtran/IEEEtran}
+\documentclass[11pt, journal, onecolumn, letterpaper,]{LaTeX_Assets/IEEETransactions_LaTeX/IEEEtran/IEEEtran}
 %\documentclass[journal]{IEEEtran} %TODO: Resolve mapping issues
 \usepackage{graphicx}
 \graphicspath{{./jpeg/}{LaTeX_Assets/jpeg/}}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
+% \usepackage{algorithm}
+% \usepackage{algpseudocode}
 \usepackage{float}
-\usepackage{upgreek}
-\usepackage{caption}
-\captionsetup[table]{skip=10pt}
+% \usepackage{upgreek}
+% \usepackage{caption}
+% \captionsetup[table]{skip=10pt}\
+\usepackage{setspace}
+\setstretch{1.5}
 
 \begin{document}
 
-    \title{Survey Paper}
+    \title{A Survey of Satellite Routing Algorithms in the Mega-Constellation Era}
     \author{Stephen~Donchez,~\IEEEmembership{Member,~IEEE}%
     \thanks{S. Donchez is with Villanova University, Villanova, PA 19085 USA 
     \mbox{e-mail:sdonchez@villanova.edu}}%
-    \thanks{Manuscript received Month XX, 2022}}%
+    \thanks{Manuscript received March 20, 2022}}%
 
     \maketitle
 
+    \input{content/introduction.tex}
+    \input{content/background.tex}
+    \input{content/groundToSpace.tex}
+    \input{content/singleLayer.tex}
+    \input{content/intraLayer.tex}
+    \input{content/conclusion.tex}
 
-    \section{Introduction}
-    \section{}
 
-
-    \bibliographystyle{LaTeX_Assets/IEEETransactions_LaTeX/Transactions-Bibliography/IEEEtran}
+     \bibliographystyle{LaTeX_Assets/IEEETransactions_LaTeX/Transactions-Bibliography/IEEEtran}
  %   \bibliographystyle{IEEEtran} %TODO: Resolve mapping issues
-    \bibliography{LaTeX_Assets/SDonchezResearch}
+     \bibliography{LaTeX_Assets/SatelliteRoutingReferences}
 
     %shrink space between bibliography and biography
     \vskip 0pt plus -1fil

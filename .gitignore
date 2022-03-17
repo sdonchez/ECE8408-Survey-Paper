@@ -292,4 +292,6 @@ TSWLatexianTemp*
 #ignore documentation assets
 ./*/doc/html/
 ./*/doc/latex/
+
+#ignore output since it's captured as a release in version control
 *.pdf
