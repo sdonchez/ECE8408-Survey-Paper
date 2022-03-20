@@ -1,6 +1,6 @@
 %!TeX root = ../SDonchezECE8408SurveyPaper.tex
 
-\section{background}\label{sec:background}
+\section{backround}\label{sec:background}
 The below content attempts to provide a brief background on the key characteristics of satellite networks in order to facilitate an informed discussion of routing algorithms in the subsequent sections. It is by no means intended to be a complete or robust discussion of these networks. For a more comprehensive discussion of this material, see \cite{elbert_introduction_2008}.
 
 \subsection{Satellite Orbits}\label{subsec:satelliteOrbits}
@@ -14,3 +14,5 @@ It is also important that one understands the basic concepts pertaining to the a
 Geostationary Satellites, meanwhile, can only posses an equatorial orbit at a single fixed altitude, meaning that all satellites are in the same plane. Furthermore, access to a "slot" in the geosynchronous orbit is highly coveted and therefore highly expensive. Accordingly most satellites in a GEO orbit are not necessarily interfacing with other GEO satellites in the sense that a MEO or LEO constellation would. These satellites typically instead interact directly with ground stations or, alternatively, with satellites in lower orbits, in which they may act in a supervisory role.
 
 Interactions between orbits, such as those just discussed, compose the other fundamental type of link found in most satellite networks. These links, known as Inter-Orbit Links or IOLs, are often highly dynamic, due to the differing angular speeds of the satellites they are constructed between \cite{xiaogang_survey_2016}. Such links often require an entirely different routing mechanism than those utilized for the ISLs discussed above.
+
+The third type of link necessary in a satellite network, alongside ISLs and IOLs, is the link between the constellation and the ground stations, which facilitate end user access to the network. These links are typically known as User Data Links (UDLs) or, more simply, Ground Links (GLs) \cite{xiaogang_survey_2016} Much like IOLs, these links are highly dynamic and temporal, as, with the exception of GEO satellites, a satellite will necessarily only be located over (within range of) a given base station for a portion of its orbit.
